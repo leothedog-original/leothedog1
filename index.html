@@ -1,40 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming soon…</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
-      text-align: center;
-      padding: 2rem;
-    }
-    .card { max-width: 34rem; }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    p { color: #9da7b3; line-height: 1.6; }
-    code {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 0.1em 0.4em;
-    }
-  </style>
+  <meta name="description" content="Lightning McQueen — professional racer, coach, and proud resident of Radiator Springs.">
+  <title>Lightning McQueen | Kachow!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="card">
-    <h1>🤖 This page is waiting for Codex</h1>
-    <p>
-      GitHub Pages is working. Now fill in <code>prompt.txt</code>, paste it
-      into Codex cloud, merge the pull request it opens, and this placeholder
-      becomes your personal website.
-    </p>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Lightning McQueen home"><span class="bolt">⚡</span> 95</a>
+    <nav aria-label="Primary navigation"><a href="#story">My story</a><a href="#springs">Radiator Springs</a><a href="#pit-crew">Pit crew</a></nav>
+    <a class="header-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Watch me roll <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="speed-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Radiator Springs, USA</p>
+        <h1 id="hero-title">Lightning<br><em>McQueen.</em></h1>
+        <p class="tagline">Professional racer who spends his free time with a rusty tow truck in Radiator Springs.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#story">Hit the road <span aria-hidden="true">→</span></a><a class="button button-ghost" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"><span class="play" aria-hidden="true">▶</span> My YouTube</a></div>
+      </div>
+      <div class="car-stage" aria-label="A stylized red racing car with the number 95">
+        <div class="sun" aria-hidden="true"></div><div class="mesa mesa-one" aria-hidden="true"></div><div class="mesa mesa-two" aria-hidden="true"></div><div class="road" aria-hidden="true"></div>
+        <div class="car" aria-hidden="true"><div class="spoiler"></div><div class="cab"><b></b></div><div class="windshield"></div><div class="body"><span class="decal">95</span><span class="flame">⚡</span><span class="headlight"></span></div><div class="wheel wheel-back"></div><div class="wheel wheel-front"></div></div>
+        <p class="car-caption">Piston Cup Champion <strong>×</strong> World Grand Prix Winner</p>
+      </div>
+      <a class="scroll-cue" href="#story">Scroll to explore <span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="story section" id="story" aria-labelledby="story-title">
+      <div class="section-label">01 / What I do</div>
+      <div class="story-intro"><p class="eyebrow dark"><span></span> Built for the track</p><h2 id="story-title">Keep moving<br>forward.</h2></div>
+      <div class="story-copy"><p class="lead">I love to hit the track, and I’m real good at dirt racing.</p><p>I was trained by the Fabulous Hudson Hornet, one of my closest friends. I recently won the Piston Cup and the World Grand Prix. After that, I slowed down and started coaching the next generation of racers.</p><blockquote>“Speed. I am speed.”</blockquote></div>
+      <div class="stat-strip" aria-label="Career highlights"><div><strong>2×</strong><span>Big wins</span></div><div><strong>95</strong><span>On the door</span></div><div><strong>1</strong><span>New generation to coach</span></div></div>
+    </section>
+    <section class="springs" id="springs" aria-labelledby="springs-title">
+      <div class="springs-heading"><div class="section-label light">02 / Home base</div><p class="eyebrow"><span></span> Route 66</p><h2 id="springs-title">Radiator Springs<br>hits different.</h2><p>After a few laps around the world, there’s nothing like coming home to the best stretch of road around.</p></div>
+      <div class="attractions">
+        <article class="attraction attraction-cafe"><span class="number">01</span><span class="attraction-icon" aria-hidden="true">✦</span><h3>Flo’s V8 Café</h3><p>Good fuel, good company, and hopefully a booth with Sally.</p></article>
+        <article class="attraction attraction-tractor"><span class="number">02</span><span class="attraction-icon" aria-hidden="true">♨</span><h3>Tractor Tipping</h3><p>Mater and I rev our engines behind tractors — just don’t wake Frank.</p></article>
+        <article class="attraction attraction-road"><span class="number">03</span><span class="attraction-icon" aria-hidden="true">⌁</span><h3>The Open Road</h3><p>A perfect place to clear the pistons and remember what matters.</p></article>
+      </div>
+    </section>
+    <section class="roadside section" id="roadside" aria-labelledby="roadside-title">
+      <div class="section-label">03 / Roadside classics</div>
+      <div class="roadside-heading"><p class="eyebrow dark"><span></span> Stop and stay awhile</p><h2 id="roadside-title">The best signs<br>on Route 66.</h2><p>Every turn in Radiator Springs has a story — and a neon sign worth pulling over for.</p></div>
+      <div class="ad-grid" aria-label="Radiator Springs business advertisements">
+        <article class="road-ad flo"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> .-V8-.
+ |CAFE |
+ '-----'</pre></div><div><p class="ad-kicker">Good fuel · good times</p><h3>Flo’s V8 Café</h3><a href="#springs">Pull in <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad cone"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art">  /\
+ /__\
+ |__|</pre></div><div><p class="ad-kicker">Sleep in style</p><h3>Cozy Cone Motel</h3><a href="#springs">Check in <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad ramone"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> /\
+&lt;  &gt;
+ \//</pre></div><div><p class="ad-kicker">Low &amp; slow</p><h3>Ramone’s House<br>of Body Art</h3><a href="#springs">Get a shine <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad luigi"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> .----.
+/ ()  \
+\____/</pre></div><div><p class="ad-kicker">Italian rubber</p><h3>Luigi’s Casa<br>Della Tires</h3><a href="#springs">Roll by <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad curios"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> .----.
+ | ?  |
+ '----'</pre></div><div><p class="ad-kicker">See the unseen</p><h3>Radiator Springs<br>Curios</h3><a href="#springs">Take a look <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad fillmore"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> \ | /
+-- O --
+ / | \</pre></div><div><p class="ad-kicker">Organic fuel</p><h3>Fillmore’s Taste-In</h3><a href="#springs">Tune in <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad sarge"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art">  _*_
+ /___\
+ |USA|</pre></div><div><p class="ad-kicker">Everything you need</p><h3>Sarge’s Surplus Hut</h3><a href="#springs">Report in <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad wheel"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> | W |
+ |___|
+ /___\</pre></div><div><p class="ad-kicker">A good night’s rest</p><h3>The Wheel Well Motel</h3><a href="#springs">Park here <span aria-hidden="true">→</span></a></div></article>
+        <article class="road-ad cadillac"><div class="ad-scene" aria-hidden="true"><pre class="ascii-art"> /\  /\
+/  \/  \
+--------</pre></div><div><p class="ad-kicker">Nature’s grandstand</p><h3>The Cadillac Range</h3><a href="#springs">Take the view <span aria-hidden="true">→</span></a></div></article>
+      </div>
+    </section>
+    <section class="journey section" aria-labelledby="journey-title">
+      <div class="section-label">04 / Full throttle history</div><div class="journey-heading"><p class="eyebrow dark"><span></span> The road so far</p><h2 id="journey-title">A few good<br>detours.</h2></div>
+      <ol class="timeline"><li><span class="year">Then</span><div><h3>Trained by a legend</h3><p>Hudson Hornet showed me that racing is about more than crossing the finish line first.</p></div></li><li><span class="year">Next</span><div><h3>Won the Piston Cup</h3><p>One of the biggest wins of my career — and a reminder to stay humble.</p></div></li><li><span class="year">Then</span><div><h3>Took on the World Grand Prix</h3><p>I raced on a world stage and brought plenty of Radiator Springs spirit along for the ride.</p></div></li><li><span class="year">Now</span><div><h3>Coaching what’s next</h3><p>These days, I’m passing on everything I learned to the next generation of racers.</p></div></li></ol>
+    </section>
+    <section class="crew" id="pit-crew" aria-labelledby="crew-title">
+      <div class="crew-title"><div class="section-label light">05 / The good ones</div><p class="eyebrow"><span></span> My pit crew</p><h2 id="crew-title">The cars who<br>keep me grounded.</h2></div>
+      <div class="crew-grid"><article><span class="crew-mark mater">M</span><h3>Mater</h3><p>Best friend, co-pilot in mischief, and the only tow truck I need.</p></article><article><span class="crew-mark doc">H</span><h3>Hudson Hornet</h3><p>My mentor, a true racing legend, and family.</p></article><article><span class="crew-mark sally">S</span><h3>Sally</h3><p>The heart of Radiator Springs and my favorite company at Flo’s.</p></article><article class="fact-card"><span class="crew-mark bolt-mark">⚡</span><h3>Fun fact</h3><p>Francesco Bernoulli is fragile and a slow racer. <span aria-label="red car">🚗</span></p></article></div>
+    </section>
   </main>
+  <footer><p class="footer-quote">“Ka-chow!”</p><p>Lightning McQueen <span aria-hidden="true">•</span> Radiator Springs</p><a href="#top" aria-label="Back to top">Back to top ↑</a></footer>
 </body>
 </html>
